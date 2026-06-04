@@ -72,6 +72,41 @@ rostr-openclaw/
     examples/
 ```
 
+## Marketplaces
+
+The ROSTR-for-OpenClaw skill is available on multiple marketplaces:
+
+| Marketplace | URL | Type |
+|-------------|-----|------|
+| **ClawHub** (official) | `npx clawhub@latest install rostr-for-openclaw` | Free |
+| **GitHub** | https://github.com/diamitani/rostr-openclaw | Open source |
+| **AI Skill Market** | https://aiskill.market | Free index |
+| **SkillHQ** | https://skillhq.dev | Paid (85% creator) |
+| **Agent Skill Exchange** | https://agentskillexchange.com | Free |
+| **AI Skill Store** | https://www.aiskillstore.io | Free/API |
+
+See [MARKETPLACES.md](MARKETPLACES.md) for the full list of 9+ marketplaces with publish instructions.
+
+## Quickstart
+
+### Install the Skill
+```bash
+npx clawhub@latest install rostr-for-openclaw
+```
+
+### Bootstrap a Workspace
+```bash
+bash <(curl -s https://raw.githubusercontent.com/diamitani/rostr-openclaw/main/repo/src/rostr-bootstrap.sh)
+```
+
+### Manual Setup
+```bash
+cp -r skill/ ~/.claude/skills/rostr-for-openclaw/
+cp -r openclaw/.rostr/* ~/.openclaw/workspace/.rostr/
+```
+
+Then update your workspace `SOUL.md`, `AGENTS.md`, and `RULES.md` with the ROSTR layer instructions (see `openclaw/` directory).
+
 ## License
 
 MIT
