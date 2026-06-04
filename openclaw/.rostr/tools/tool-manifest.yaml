@@ -1,0 +1,39 @@
+tools:
+  - name: "web_search"
+    type: "api"
+    description: "Search the web for current information"
+    required: true
+    config:
+      provider: "perplexity"
+      auth: "api_key"
+      env_var: "PERPLEXITY_API_KEY"
+
+  - name: "web_fetch"
+    type: "builtin"
+    description: "Fetch and read content from URLs"
+    required: true
+
+  - name: "file_system"
+    type: "builtin"
+    description: "Read, write, edit, and manage files"
+    required: true
+    config:
+      workspace: "/Users/patmini/.openclaw/workspace"
+
+  - name: "code_execution"
+    type: "builtin"
+    description: "Execute shell commands on the local machine"
+    required: true
+
+  - name: "subagent_spawn"
+    type: "builtin"
+    description: "Spawn sub-agents for specialized tasks"
+    required: false
+    config:
+      max_concurrent: 1
+      timeout_seconds: 1200
+
+  - name: "memory"
+    type: "builtin"
+    description: "Read from and write to the Rostr Hub state layer"
+    required: true

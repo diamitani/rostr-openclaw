@@ -1,0 +1,25 @@
+tools:
+  - name: "web_search"
+    type: "api"
+    description: "Search the web for current information"
+    required: false
+
+  - name: "web_fetch"
+    type: "builtin"
+    description: "Fetch and read content from URLs"
+    required: false
+
+  - name: "file_system"
+    type: "builtin"
+    description: "Read, write, edit, and manage files"
+    required: true
+
+  - name: "code_execution"
+    type: "builtin"
+    description: "Execute commands"
+    required: false
+
+  - name: "memory"
+    type: "builtin"
+    description: "Read/write Rostr Hub state"
+    required: true

@@ -1,0 +1,37 @@
+# Example: Northstar Agent Configuration
+# This is the production configuration for the Northstar chief-of-staff agent
+
+rostr_version: "1.0"
+agent:
+  id: "northstar"
+  name: "Northstar"
+  description: "Chief-of-staff operator with ROSTR architecture — PAL intent compilation, NPAO phase orchestration, RAG DAL knowledge retrieval, Rostr Hub persistent state"
+  version: "0.1.0"
+  license: "MIT"
+
+framework:
+  pal: true
+  ragdal: true
+  npao: true
+  hub: true
+
+phases:
+  primary:
+    - PreD
+    - Design
+  secondary:
+    - Development
+    - Deployment
+    - Debugging
+
+capabilities:
+  - intent_compilation
+  - phase_classification
+  - multi_pass_retrieval
+  - state_persistence
+  - decision_logging
+  - multi_agent_orchestration
+
+platform: openclaw
+platform_version: "2026.5.19"
+runtime: openclaw

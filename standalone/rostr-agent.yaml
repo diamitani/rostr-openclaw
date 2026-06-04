@@ -1,0 +1,39 @@
+rostr_version: "1.0"
+agent:
+  id: "your-agent-slug"
+  name: "Your Agent Name"
+  description: "What this agent does"
+  version: "0.1.0"
+  author: "your name"
+  license: "MIT"
+
+framework:
+  pal: true
+  ragdal: true
+  npao: true
+  hub: true
+
+exports:
+  - claude_skill
+  - openclaw
+  - standalone
+
+phases:
+  primary:
+    - PreD
+    - Design
+  secondary:
+    - Development
+    - Deployment
+    - Debugging
+
+capabilities:
+  - intent_compilation
+  - phase_classification
+  - multi_pass_retrieval
+  - state_persistence
+  - decision_logging
+
+platform: openclaw
+platform_version: "2026.x.x"
+runtime: openclaw

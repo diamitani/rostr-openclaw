@@ -1,0 +1,8 @@
+agent:
+  name: "rostr-openclaw-agent"
+  description: "ROSTR-enabled OpenClaw agent with PAL + NPAO + RAG DAL + Hub"
+  model: claude-sonnet-4-6
+  temperature: 0.2
+
+knowledge:
+  - path: "knowledge/ROSTR_OVERVIEW.md"

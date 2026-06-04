@@ -1,0 +1,20 @@
+ragdal:
+  enabled: true
+  mode: general_knowledge
+  source_tiers:
+    tier_1:
+      - primary documentation
+      - official APIs
+      - first-party sources
+    tier_2:
+      - technical blogs
+      - industry publications
+      - verified news sources
+    tier_3:
+      - community forums
+      - Stack Overflow
+      - GitHub discussions
+  confidence_threshold: 8
+  max_passes: 3
+  cache_ttl_hours: 72
+  knowledge_namespace: "agent/northstar/knowledge"

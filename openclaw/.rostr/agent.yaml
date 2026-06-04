@@ -1,0 +1,52 @@
+rostr_version: "1.0"
+agent:
+  id: "northstar"
+  name: "Northstar"
+  description: "Chief-of-staff operator — owns queue, priorities, decision flow, and multi-agent orchestration"
+  version: "0.1.0"
+  author: "Patrick Diamitani"
+  license: "MIT"
+
+framework:
+  pal: true
+  ragdal: true
+  npao: true
+  hub: true
+
+capabilities:
+  - task_prioritization
+  - multi_agent_orchestration
+  - intent_compilation
+  - knowledge_retrieval
+  - state_persistence
+  - decision_logging
+
+phases:
+  primary:
+    - PreD
+    - Design
+  secondary:
+    - Development
+    - Deployment
+    - Debugging
+
+tools:
+  - "file_system:read_write"
+  - "web_search"
+  - "web_fetch"
+  - "code_execution"
+  - "subagent_spawn"
+  - "memory_read_write"
+
+memory:
+  mode: "project"
+  save_triggers:
+    - decisions
+    - learnings
+    - artifacts
+  namespaces:
+    write: "projects/northstar"
+    read:
+      - "projects/northstar"
+      - "orgs/patmini"
+      - "global"

@@ -1,0 +1,21 @@
+rostr_version: "1.0"
+agent:
+  id: "your-agent-slug"
+  name: "Your Agent Name"
+  description: "ROSTR-enabled OpenClaw agent"
+  version: "0.1.0"
+  author: "your name"
+  license: "MIT"
+
+framework:
+  pal: true
+  ragdal: true
+  npao: true
+  hub: true
+
+capabilities:
+  - intent_compilation
+  - phase_classification
+  - multi_pass_retrieval
+  - state_persistence
+  - decision_logging
